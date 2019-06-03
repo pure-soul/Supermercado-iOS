@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="search_cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="eRI-pk-LuM" customClass="SearchCell" customModule="FAPanels" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eRI-pk-LuM" id="I4k-sy-I6x" customClass="SearchCell" customModule="FAPanels" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="toCart" image="add to cart 2" translatesAutoresizingMaskIntoConstraints="NO" id="rj2-6p-zS7">
+                        <rect key="frame" x="309" y="16" width="32" height="24"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="add" image="391436-200 (1)" translatesAutoresizingMaskIntoConstraints="NO" id="r2T-WN-yLF">
+                        <rect key="frame" x="339" y="51" width="23" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="minus" image="391436-200" translatesAutoresizingMaskIntoConstraints="NO" id="mm3-3z-6sK">
+                        <rect key="frame" x="288" y="52" width="28" height="26"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAH-gW-GYi">
+                        <rect key="frame" x="299" y="6" width="56" height="39"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="cartButtonWithSender:" destination="eRI-pk-LuM" eventType="touchDown" id="ZKQ-ty-89r"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwz-Vu-OBP">
+                        <rect key="frame" x="339" y="48" width="23" height="34"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <connections>
+                            <action selector="addWithSender:" destination="eRI-pk-LuM" eventType="touchDown" id="vgM-FT-5Cp"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMe-X3-EVh">
+                        <rect key="frame" x="285" y="48" width="31" height="35"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <connections>
+                            <action selector="minusWithSender:" destination="eRI-pk-LuM" eventType="touchDown" id="2Nf-xm-KDj"/>
+                        </connections>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Name" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgy-3D-jiy">
+                        <rect key="frame" x="20" y="7" width="185" height="33"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" label="Name"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="00" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2L-bR-bwe">
+                        <rect key="frame" x="308" y="48" width="37" height="29"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="00000.00" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gn-tt-IH7">
+                        <rect key="frame" x="214" y="6" width="77" height="34"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="About Item" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yv0-Xi-es9">
+                        <rect key="frame" x="20" y="39" width="258" height="51"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpH-X5-cba">
+                        <rect key="frame" x="208" y="12" width="11" height="21"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cost" destination="2Gn-tt-IH7" id="zw1-vo-4ZA"/>
+                <outlet property="descrip" destination="Yv0-Xi-es9" id="wTT-pw-Z3E"/>
+                <outlet property="name" destination="jgy-3D-jiy" id="MyA-w7-La0"/>
+                <outlet property="quan" destination="C2L-bR-bwe" id="cS9-VH-BZT"/>
+            </connections>
+            <point key="canvasLocation" x="39.855072463768117" y="-300.66964285714283"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="391436-200" width="96" height="103"/>
+        <image name="391436-200 (1)" width="92" height="101"/>
+        <image name="add to cart 2" width="512" height="512"/>
+    </resources>
+</document>
